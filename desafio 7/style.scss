@@ -1,50 +1,171 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.fundo{
-    background-image: linear-gradient(45deg,black,crimson);
-    height: 100vh;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    background-image: url("./dan-cristian-padure-xJLN32FO7AY-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 0;
 }
 
-.calculadora{
+.conteiner{
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 4px solid #fff;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 20px;
+    width: 700px;
+    height: 490px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-width: 100%;
+        width: 200px;
+        padding: 0px 30px 10px;
+    }
+}
+
+.corpo{
+
+    h1{
+        font-size: 30px;
+        line-height: 30px;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    input{
+        text-align: center;
+        width: 150px;
+        border: none;
+        border-radius: 6px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    input:focus{
+        border: none;
+        outline: none;
+    }
+
+    input:focus::placeholder{
+        color: transparent;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    label{
+        font-size: 16px;
+        padding: 10px;
+        font-weight: 600;
+    }
+
+    .inputs{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    button{
+        width: 120px;
+        height: 30px;
+        margin: 0px 10px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: rgb(200, 200, 200);
+    }
+
+    .botoes{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .resultado{
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    #resultado{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.despedida{
+    display: none;
+    font-size: 50px;
+    font-weight: bold;
     position: absolute;
-    background-color: black;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 15px;
-    padding: 15px;
+    transform: translate(-50%, -50%)
 }
 
-.botao{
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    cursor: pointer;
-    margin: 3px;
-    background-color: rgb(31,31,31);
-    border: none;
-    color: #fff;
-}
+footer{
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0px 0px;
 
-.botao:hover{
-    background-color: black;
-}
+    div{
 
-#resultado{
-    margin: 3px 3px;
-    width: 224px;
-    background-color: #fff;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    color: #000;
-    text-align: right;
-    font-size: 24px;
-    padding-right: 3px;
+        img {
+            max-width: 100%;
+            width: 40px;
+            margin: 0px 20px;
+        }
+    }
+
+    p{
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px;
+    }
+
+    strong{
+        font-weight: 600;
+        font-size: 16px;
+    }
 }

@@ -1,50 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora</title>
-    <!-- <link rel="stylesheet" href="/reset.css"> -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/assets/reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="fundo">
-        <div class="calculadora">
+    <section class="conteiner">
+        <header class="titulo">
+            <img src="./background-7days.1647533642.svg" alt="Logo 7DaysOfCode">
+        </header>
+        <main class="corpo">
             <h1>Calculadora</h1>
-            <p id="resultado"></p>
-            <table>
-                <tr>
-                    <td><button class="botao" onclick="clean()">C</button></td>
-                    <td><button class="botao" onclick="back()"><</button></td>
-                    <td><button class="botao" onclick="insert('/')">/</button></td>
-                    <td><button class="botao" onclick="insert('*')">X</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('7')">7</button></td>
-                    <td><button class="botao" onclick="insert('8')">8</button></td>
-                    <td><button class="botao" onclick="insert('9')">9</button></td>
-                    <td><button class="botao" onclick="insert('-')">-</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('4')">4</button></td>
-                    <td><button class="botao" onclick="insert('5')">5</button></td>
-                    <td><button class="botao" onclick="insert('6')">6</button></td>
-                    <td><button class="botao" onclick="insert('+')">+</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('1')">1</button></td>
-                    <td><button class="botao" onclick="insert('2')">2</button></td>
-                    <td><button class="botao" onclick="insert('3')">3</button></td>
-                    <td rowspan="2"><button class="botao" onclick="calcular()" style="height: 106px;">=</button></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><button class="botao" onclick="insert('0')" style="width: 106px">0</button></td>
-                    <td><button class="botao" onclick="insert('.')">.</button></td>
-                </tr>
-            </table>
+            <p>Insira um valor e selecione a operação</p>
+            <section class="inputs">
+                <div>
+                    <label for="valor1">valor 1</label>
+                    <input id="valor1" class="valor1" type="number" placeholder="insira o valor">
+                </div>
+                <div>
+                    <label for="valor2">valor 2</label>
+                    <input id="valor2" class="valor2" type="number" placeholder="insira o valor">
+                </div>
+            </section>
+            <p id="resultado">Resultado</p>
+            <p class="resultado"></p>
+            <div class="botoes">
+                <button class="botao" id="soma" >Somar</button>
+                <button class="botao" id="subtrair" >Subtrair</button>
+                <button class="botao" id="multiplicar" >Multiplicar</button>
+                <button class="botao" id="dividir" >Dividir</button>
+            </div>
+            <button onclick="sair()">Sair</button>
+            <button onclick="limpar()">Limpar</button>
+        </main>
+        <h1 class="despedida">Até a próxima</h1>
+    </section>
+    <footer>
+        <div>
+            <a href="https://github.com/felpsgus" target="_blank"><img src="/assets/github-branco.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/felipeaugustoveras/" target="_blank"><img src="/assets/linkedin-branco.png" alt=""></a>
+            <a href="https://www.instagram.com/felps_gus/" target="_blank"><img src="/assets/instagram-branco.png" alt=""></a>
         </div>
-    </div>
+        <p>made by <strong>Felipe Augusto Lopes Veras</strong></p>
+    </footer>
 </body>
 <script src="./script.js"></script>
 </html>
