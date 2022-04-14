@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap");
+body {
+  font-family: 'Anonymous Pro', monospace;
+  background-image: url(./maxresdefault.jpg);
+  background-blend-mode: overlay;
+  background-color: #202020;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #020202;
+  border-radius: 30px;
+  margin: 40px;
+  padding: 40px;
+  border: 2px solid #007247;
+  text-align: center;
+}
+
+.conteiner button {
+  border: none;
+  cursor: pointer;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titulo img {
+  max-width: 100%;
+  width: 200px;
+  padding: 0px 30px 30px;
+}
+
+.conteudo section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conteudo h1 {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.conteudo .p1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conteudo .p1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.conteudo .p1 button.red {
+  width: 270px;
+  height: 90px;
+  border-radius: 100px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 32px;
+  margin-bottom: 30px;
+  background-color: #c80000;
+}
+
+.conteudo .p1 button.blue {
+  width: 270px;
+  height: 90px;
+  border-radius: 100px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 32px;
+  margin-bottom: 30px;
+  background-color: #0000c8;
+}
+
+.conteudo .p2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conteudo .p2 button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteudo .p2 button.red {
+  width: 270px;
+  height: 90px;
+  border-radius: 100px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 32px;
+  margin-bottom: 30px;
+  background-color: #c80000;
+  font-size: 30px;
+}
+
+.conteudo .p2 button.blue {
+  width: 270px;
+  height: 90px;
+  border-radius: 100px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 32px;
+  margin-bottom: 30px;
+  background-color: #0000c8;
+  font-size: 30px;
+}
+
+.conteudo .p2 img {
+  border-radius: 100px;
+  max-width: 100%;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.conteudo .p2 .front {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conteudo .p2 .front div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.conteudo .p2 .back {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conteudo .p2 .back div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.conteudo .p3 {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteudo .p3 h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 900px;
+}
+
+.conteudo .p3 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.conteudo .p3 button.red {
+  width: 270px;
+  height: 90px;
+  border-radius: 100px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 32px;
+  margin-bottom: 30px;
+  background-color: #c80000;
+}
+
+.conteudo .p3 button.blue {
+  width: 270px;
+  height: 90px;
+  border-radius: 100px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 32px;
+  margin-bottom: 30px;
+  background-color: #0000c8;
+  padding: 0px 15px;
+}
+
+.conteudo .p4 {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.conteudo .p4 label {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 900px;
+}
+
+.conteudo .p4 textarea {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  margin: 20px;
+  border-radius: 50px;
+  max-width: 900px;
+  min-width: 900px;
+  max-height: 36px;
+  min-height: 36px;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+.conteudo .p4 textarea::-webkit-input-placeholder {
+  padding-left: 12px;
+}
+
+.conteudo .p4 textarea:-ms-input-placeholder {
+  padding-left: 12px;
+}
+
+.conteudo .p4 textarea::-ms-input-placeholder {
+  padding-left: 12px;
+}
+
+.conteudo .p4 textarea::placeholder {
+  padding-left: 12px;
+}
+
+.conteudo .p4 textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.conteudo .p4 textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.conteudo .p4 textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.conteudo .p4 textarea:focus::placeholder {
+  color: transparent;
+}
+
+.conteudo .p4 button {
+  width: 180px;
+  height: 60px;
+  border-radius: 100px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 32px;
+  margin-bottom: 30px;
+  background-color: #007247;
+}
+
+.conteudo .p5 {
+  display: none;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.conteudo .p5 p {
+  margin-bottom: 20px;
+}
+
+.conteudo .p5 li {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */

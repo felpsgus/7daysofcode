@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+body {
+  font-family: 'VT323', monospace;
+  background-image: url(./pixel_sunset_colour_by_schwarzer__ritter_dbtqyye.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 40px;
+  padding: 40px;
+  background-color: rgba(10, 10, 10, 0.75);
+  border-radius: 20px;
+  color: #ffffff;
+  width: 700px;
+  height: 420px;
+}
+
+.container h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.container .tentativas {
+  font-size: 20px;
+}
+
+.container h2 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.container input {
+  font-family: 'VT323', monospace;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 30px;
+}
+
+.container input[type="number"]::-webkit-inner-spin-button,
+.container input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container button {
+  font-family: 'VT323', monospace;
+  width: 100px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #9B3451;
+  color: #ffffff;
+  border-style: none;
+  cursor: pointer;
+}
+
+button {
+  font-family: 'VT323', monospace;
+  width: 200px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #9B3451;
+  color: #ffffff;
+  border-style: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,181 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./supermercado.jpg);
+  background-size: cover;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteiner {
+  background-color: rgba(224, 100, 46, 0.95);
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 10px #0a0a0a;
+          box-shadow: 5px 5px 10px #0a0a0a;
+  margin: 40px;
+  padding: 20px;
+  color: #ffffff;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.conteiner .produtos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 2px 2px 2px #242424;
+}
+
+.conteiner h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px;
+  text-shadow: 2px 2px 2px #242424;
+}
+
+.conteiner p {
+  font-size: 22px;
+  margin: 16px;
+}
+
+.conteiner .line {
+  padding: 10px;
+}
+
+.conteiner label {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 4px;
+}
+
+.conteiner input {
+  border-style: none;
+  width: 260px;
+  height: 30px;
+  outline: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.conteiner select {
+  border-style: none;
+  padding: 2px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 6px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.conteiner option {
+  border-radius: 0px;
+}
+
+.conteiner .botoes {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.conteiner button {
+  background-color: #242424;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 6px;
+  height: 30px;
+  width: 200px;
+  font-weight: 600;
+}
+
+.conteiner .lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  color: #242424;
+  border-radius: 20px;
+}
+
+.conteiner .lista h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.conteiner .lista li {
+  font-size: 40;
+  font-weight: 700;
+  margin: 0px 20px;
+  list-style: none;
+}
+
+.conteiner .frutas {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.conteiner .laticinios {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.conteiner .congelados {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.conteiner .doces {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */

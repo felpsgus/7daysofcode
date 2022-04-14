@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista para Supermercado</title>
+    <link rel="icon" href="./notes.png" type="image/png">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <h1>Lista para Supermercado</h1>
+        </header>
+        <section class="produtos">
+            <p>Coloque o nome do alimento e selecione a categoria</p>
+            <div class="line">
+                <label for="alimento">Alimento: </label>
+                <input name="alimento" type="text" id="alimento">
+                <label for="categorias">Categoria:</label>
+                <select name="categorias" id="categorias">
+                    <option value="frutas">Frutas</option>
+                    <option value="laticinios">Laticínios</option>
+                    <option value="congelados">Congelados</option>
+                    <option value="doces">Doces</option>
+                </select>
+            </div>
+        </section>
+        <section class="lista">
+            <div class="frutas">
+                <h2>Frutas</h2>
+                <li class="f"></li>
+            </div>
+            <div class="laticinios">
+                <h2>Laticínios</h2>
+                <li class="l"></li>
+            </div>
+            <div class="congelados">
+                <h2>Congelados</h2>
+                <li class="c"></li>
+            </div>
+            <div class="doces">
+                <h2>Doces</h2>
+                <li class="d"></li>
+            </div>
+        </section>
+        <section class="botoes">
+            <button class="adicionar" onclick="adicionar()">Adicionar produto</button>
+            <button class="excluir" onclick="excluir()">Excluir produto</button>
+        </section>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
