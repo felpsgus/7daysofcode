@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentalista</title>
-    <link rel="stylesheet" href="/reset.css">
+    <link rel="icon" href="brain.png" type="image/png">
+    <link rel="stylesheet" href="/assets/reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1 class="page-title">Mentalista</h1>
-    <p class="page-subtitle">Digite um número de 0 a 10</p>
-    <p class="tentativas">Você tem 3 tentativas</p>
-    <input type="number" id="valor" max="10" min="0"><br>
-    <button type="submit" onclick="Chutar()">Chutar</button>
-    <h2 class="resultado" id="resultado"></h2>
+  <div class="geral">
+    <div class="container">
+      <h1 class="page-title">Mentalista</h1>
+      <p class="page-subtitle">Digite um número de 0 a 10</p>
+      <p class="tentativas">Você tem 3 tentativas</p>
+      <input type="number" id="valor" max="10" min="0"><br>
+      <button type="submit" onclick="Chutar()">Chutar</button>
+      <h2 class="resultado" id="resultado"></h2>
+    </div>
+    <button type="reset" onclick="jogarNovamente()">Jogar Novamente</button>
   </div>
-  <button type="reset" onclick="jogarNovamente()">Jogar Novamente</button>
+  <footer>
+    <div>
+        <a href="https://github.com/felpsgus" target="_blank"><img src="/assets/github-branco.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/felipeaugustoveras/" target="_blank"><img src="/assets/linkedin-branco.png" alt=""></a>
+        <a href="https://www.instagram.com/felps_gus/" target="_blank"><img src="/assets/instagram-branco.png" alt=""></a>
+    </div>
+    <p>made by <strong>Felipe Augusto Lopes Veras</strong></p>
+  </footer>
 </body>
 <script src="./script.js"></script>
 </html>

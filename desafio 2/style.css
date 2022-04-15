@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #909090;
+  background-image: url("./tumblr_ca6392f4985bcf85661b18532ab86b9e_f1d61dbc_2048.jpg");
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,12 +9,28 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
-body header {
+.conteiner {
+  background-color: rgba(10, 10, 10, 0.85);
+  border: 4px solid #DFDFE9;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  width: 700px;
+  height: 400px;
+}
+
+header {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,20 +41,17 @@ body header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #DFDFE9;
   margin: 10px 0px;
 }
 
-body header h1 {
-  font-size: 50px;
-  font-weight: bold;
-  color: #000000;
-  padding: 10px;
+header img {
+  max-width: 100%;
+  width: 150px;
+  margin: 0px 10px 30px;
 }
 
-body main {
-  margin-left: auto;
-  margin-right: auto;
+main {
   width: 100%;
   text-align: center;
   display: -webkit-box;
@@ -55,31 +69,90 @@ body main {
           justify-content: center;
 }
 
-body main .q1.q2.q3 {
-  display: block;
-}
-
-body main input {
-  border-radius: 10px;
-  border-style: none;
-  -webkit-box-shadow: 2px 2px 3px 3px #161616;
-          box-shadow: 2px 2px 3px 3px #161616;
-  width: 350px;
-  padding: 10px 20px;
+main input {
   text-align: center;
-  outline: 0;
-  font-weight: bold;
+  width: 400px;
+  border: none;
+  border-radius: 6px;
+  height: 30px;
+  font-size: 16px;
+  margin: 10px 0px;
+  background-color: #DFDFE9;
+  font-weight: 600;
 }
 
-body main .resposta {
+main input:focus {
+  border: none;
+  outline: none;
+}
+
+main input::-webkit-input-placeholder {
+  color: #1e1e1e;
+  font-weight: 600;
+}
+
+main input:-ms-input-placeholder {
+  color: #1e1e1e;
+  font-weight: 600;
+}
+
+main input::-ms-input-placeholder {
+  color: #1e1e1e;
+  font-weight: 600;
+}
+
+main input::placeholder {
+  color: #1e1e1e;
+  font-weight: 600;
+}
+
+main input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+main input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+main input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+main input:focus::placeholder {
+  color: transparent;
+}
+
+main input[type="number"]::-webkit-inner-spin-button,
+main input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .resposta {
   display: none;
-  color: #000000;
+  color: #DFDFE9;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-body main div {
+main div {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,29 +162,33 @@ body main div {
           justify-content: space-evenly;
 }
 
-body main .botao button {
+main .botao button {
   max-width: 100px;
   padding: 10px;
   border-radius: 5px;
   border-style: none;
-  -webkit-box-shadow: 2px 2px 3px 3px #161616;
-          box-shadow: 2px 2px 3px 3px #161616;
-  background-color: #ffffff;
+  background-color: #DFDFE9;
   text-transform: uppercase;
-  font-weight: bold;
   margin: 20px;
+  color: #1e1e1e;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-body main .botao .botao2 {
+main .botao button:hover {
+  background-color: #cbcbd5;
+}
+
+main .botao .botao2 {
   display: none;
 }
 
-body main .q4 {
+main .q4 {
   display: none;
   width: 500px;
 }
 
-body main .p2 {
+main .p2 {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -125,11 +202,47 @@ body main .p2 {
           justify-content: center;
 }
 
-body main .resposta2 {
+main .resposta2 {
   display: none;
-  color: #000000;
+  color: #DFDFE9;
   font-size: 30px;
   font-weight: bold;
   margin: 20px;
+}
+
+footer {
+  background-color: rgba(10, 10, 10, 0.85);
+  bottom: 0;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #DFDFE9;
+}
+
+footer div img {
+  max-width: 100%;
+  width: 40px;
+  margin: 0px 20px;
+}
+
+footer p {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px;
+}
+
+footer strong {
+  font-weight: bold;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

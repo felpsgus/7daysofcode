@@ -3,7 +3,7 @@ function enviar1() {
     var idade = document.querySelector('.q2').value
     var linguagem = document.querySelector('.q3').value
     
-    document.querySelector('.resposta').innerHTML = "Olá " + nome + ", você tem " + idade + " anos e já está aprendendo " + linguagem + "!"
+    document.querySelector('.resposta').innerHTML = "Olá " + nome + ", você tem " + idade + " anos e está aprendendo " + linguagem + "!"
     document.querySelector(".resposta").style.display = "block";
     document.querySelector(".q1").style.display = "none";
     document.querySelector(".q2").style.display = "none";
@@ -12,7 +12,7 @@ function enviar1() {
     document.querySelector(".botao1").style.display = "none";
     document.querySelector(".botao2").style.display = "block";
 
-    document.querySelector('.q4').placeholder = "Você gosta de estudar " + linguagem + "? Responda com o número 1 para SIM ou 2 para NÃO."
+    document.querySelector('.q4').placeholder = "Você gosta de estudar " + linguagem + "? Responda com SIM ou NÃO."
     document.querySelector(".q4").style.display = "block";
 }
 
@@ -21,7 +21,7 @@ function enviar2() {
     var r1 = "Muito bom! Continue estudando e você terá muito sucesso."
     var r2 = "Ahh que pena... Já tentou aprender outras linguagens?"
 
-    if (satisfacao == 1) {
+    if (satisfacao == "sim") {
         document.querySelector(".resposta2").innerHTML = r1;
     }else{
         document.querySelector(".resposta2").innerHTML = r2;

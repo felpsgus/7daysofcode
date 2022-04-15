@@ -4,8 +4,10 @@ body{
     background-size: cover;
     text-align: center;
     display: flex;
-    align-content: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 .conteiner{
@@ -16,10 +18,7 @@ body{
     padding: 20px;
     color: #ffffff;
     width: 800px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    position: relative;
 
     .produtos{
         display: flex;
@@ -86,7 +85,7 @@ body{
     
 
     button{ 
-        background-color: #242424;
+        background-color: #000000;
         outline: none;
         border: none;
         color: #ffffff;
@@ -144,5 +143,34 @@ body{
         flex-direction: column;
         padding: 20px;
         border-radius: 20px;
+    }
+}
+footer{
+    background-color: rgba(224, 100, 46, 0.95);;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0px 0px;
+    color: #ffffff;
+
+    div{
+
+        img {
+            max-width: 100%;
+            width: 40px;
+            margin: 0px 20px;
+        }
+    }
+
+    p{
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px;
+    }
+
+    strong{
+        font-weight: 600;
+        font-size: 16px;
     }
 }

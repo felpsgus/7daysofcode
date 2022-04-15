@@ -6,11 +6,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
 }
 
 .conteiner {
@@ -22,11 +28,7 @@ body {
   padding: 20px;
   color: #ffffff;
   width: 800px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: relative;
 }
 
 .conteiner .produtos {
@@ -102,7 +104,7 @@ body {
 }
 
 .conteiner button {
-  background-color: #242424;
+  background-color: #000000;
   outline: none;
   border: none;
   color: #ffffff;
@@ -177,5 +179,32 @@ body {
           flex-direction: column;
   padding: 20px;
   border-radius: 20px;
+}
+
+footer {
+  background-color: rgba(224, 100, 46, 0.95);
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0px 0px;
+  color: #ffffff;
+}
+
+footer div img {
+  max-width: 100%;
+  width: 40px;
+  margin: 0px 20px;
+}
+
+footer p {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px;
+}
+
+footer strong {
+  font-weight: 600;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

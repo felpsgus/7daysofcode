@@ -2,6 +2,12 @@ var numeroSecreto = Math.floor(Math.random() * (10 - 0 + 1) + 0);
 
 var tentativas = 0
 
+document.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    Chutar();
+  }
+})
+
 function Chutar() {
 
   var resultado = document.querySelector(".resultado")

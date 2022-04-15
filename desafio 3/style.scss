@@ -35,6 +35,10 @@ body {
     background-image: url(./maxresdefault.jpg);
     background-blend-mode: overlay;
     background-color: rgb(32, 32, 32);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .conteiner {
@@ -246,5 +250,41 @@ body {
         li{
             margin-bottom: 20px;
         }
+
+        ul{
+            list-style: none;
+        }
+    }
+}
+
+footer{
+    background-color: #000;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+
+    div{
+
+        img {
+            max-width: 100%;
+            width: 40px;
+            margin: 0px 20px;
+        }
+    }
+
+    p{
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px;
+    }
+
+    strong{
+        font-weight: bold;
+        font-size: 16px;
     }
 }
