@@ -1,4 +1,4 @@
-# 7 Days of Code - Java
+# 7 Days of Code - JavaScript
 
 ## Dia 01
 
