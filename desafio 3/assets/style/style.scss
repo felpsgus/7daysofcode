@@ -32,7 +32,7 @@
 
 body {
     font-family: 'Anonymous Pro', monospace;
-    background-image: url(./maxresdefault.jpg);
+    background-image: url(../img/maxresdefault.jpg);
     background-blend-mode: overlay;
     background-color: rgb(32, 32, 32);
     height: 100vh;
@@ -258,7 +258,7 @@ body {
 }
 
 footer{
-    background-color: #000;
+    background-color: rgba(2, 2, 2, 0.85);
     bottom: 0;
     width: 100%;
     margin-top: 10px;

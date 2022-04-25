@@ -1,5 +1,5 @@
 body {
-  background-image: url("./dan-cristian-padure-xJLN32FO7AY-unsplash.jpg");
+  background-image: url("../img/dan-cristian-padure-xJLN32FO7AY-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
@@ -185,7 +185,7 @@ body {
 }
 
 footer {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
   position: absolute;
   bottom: 0;
   width: 100%;

@@ -1,6 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: url(./supermercado.jpg);
+  background-image: url(../img/supermercado.jpg);
   background-size: cover;
   text-align: center;
   display: -webkit-box;
@@ -22,8 +22,8 @@ body {
 .conteiner {
   background-color: rgba(224, 100, 46, 0.95);
   border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 10px #0a0a0a;
-          box-shadow: 5px 5px 10px #0a0a0a;
+  -webkit-box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.8);
+          box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.8);
   margin: 40px;
   padding: 20px;
   color: #ffffff;
